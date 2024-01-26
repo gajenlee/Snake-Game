@@ -1,0 +1,145 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow: hidden;
+    background-color: rgb(4, 49, 62);
+    position: relative;
+}
+
+
+.gameconsole-screen {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
+}
+
+#gameConsole {border-radius: 10px;}
+
+#score {color: white;}
+
+.game-score {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    min-height: 200px;
+}
+
+.msg-box{display: none;}
+
+.msg-box.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.msg-text { z-index: 999; }
+
+#score-gameover {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+#msg {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 5em;
+}
+
+.msg-box#score-gameover{
+    font-size: 5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btns button {
+    height: 40px;
+    width: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    border: 0 solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btns button#play {
+    background-color: rgb(2, 95, 2);
+}
+
+.btns button#play:hover {
+    background-color: rgb(4, 140, 4);
+}
+
+.game-score-screen {
+    background-color: rgb(6, 67, 84);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    color: white;
+}
+
+.game-score-screen h2 {
+    align-self: right;
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 2em;
+}
+
+.game-score-screen h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-controls select {
+    height: 2.5vw;
+    width: 25vw;
+    padding: 10px;
+    background-color: rgb(8, 81, 101);
+    border: 0 solid;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    outline: none;
+} 
+
+.game-controls label {
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    width: 20vh;
+}
